@@ -1,9 +1,7 @@
 #include "main.h"
 #include <ctype.h>
-/*
- * _islower - Entry point
- *
- * check islower
+/**
+ * _islower - islower
  */
 int _islower(int c)
 {
