@@ -1,11 +1,13 @@
 #include "main.h"
 #include <ctype.h>
 /*
- * int _isalpha - int isalpha
+ *_isalpha - Entry point
+ *
+ * check: isalpha
  */
 int _isalpha(int c)
 {
-if (islower(c))
+if (isalpha(c))
 return (1);
 else
 return (0);

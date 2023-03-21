@@ -1,12 +1,14 @@
 #include "main.h"
 #include <ctype.h>
 /*
- * int _islower -int _islower
+ * _islower - Entry point
+ *
+ * check islower
  */
 int _islower(int c)
 {
 if (islower(c))
 	return (1);
-else 
+else
 	return (0);
 }
