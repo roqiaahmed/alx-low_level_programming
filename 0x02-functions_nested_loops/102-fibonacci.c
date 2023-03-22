@@ -6,16 +6,22 @@
 */
 int main(void)
 {
-int num1, num2, num3, i;
-num1 = 1;
-num2 = 2;
-printf("%d, %d, ", num1, num2);
-for (i = 1; 1 <= 50; i++)
+int i = 0;
+int j = 1, k = 2;
+while (i < 50)
 {
-num3 = num1 + num2;
-printf("%d, ", num3);
-num1 = num2;
-num2 = num3;
+if (i == 0)
+printf("%d", j);
+else if (i == 1)
+printf(", %d", k);
+else
+{
+k += j;
+j = k - j;
+printf(", %d", k);
+};
+i++;
 }
+printf("\n");
 return (0);
 }
