@@ -1,8 +1,9 @@
 #include "main.h"
 
- /* _isupper - prints the numbers
+ /** _isupper - prints the numbers
  *
  * Return: numbers from 0 to 9
+ * Description: prints the numbers
  */
 
 void print_numbers(void)
