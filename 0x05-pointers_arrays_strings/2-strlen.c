@@ -5,8 +5,6 @@
   *
   * @s: The character
   *
-  * description:function that returns the length of a string.
-  *
   * Return: the length of a string.
   */
 
