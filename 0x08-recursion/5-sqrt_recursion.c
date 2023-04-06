@@ -4,18 +4,24 @@
  * @n: input
  * Return: result of square root
  */
-
+int count(int n, int i);
 int _sqrt_recursion(int n)
 {
-int i;
 if (n < 0)
 return (-1);
-i = 0;
-while (i *i != n)
-{
-if (i *i > n)
-return (-1);
-i++;
+return (count(n, 0));
 }
+/**
+ * count - count i
+ * @n: input
+ * @i: input
+ * Return: result of number i
+ */
+int count(int n, int i)
+{
+if (i * i > n)
+return (-1);
+if (i * i == n)
 return (i);
+return (count(n, i + 1));
 }
