@@ -16,17 +16,22 @@ return (i);
 /**
  * str_concat - copy the string
  *@s1: the stirng one
- *@s1: the stirng two
+ *@s2: the stirng two
  *
  * Return: NULL if fails and the string if right.
  */
 char *str_concat(char *s1, char *s2)
 {
 int i;
+char *ptr;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 int s1size = _size(s1);
 int s2size = _size(s2);
-char *ptr = malloc(s1size + s2size);
-if (s1size == 0 || s2size == 0 || s1 == NULL || s2 == NULL)
+ptr = malloc(sizeof(char) * (s1size + s2size + 1));
+if (ptr == NULL)
 return (NULL);
 for (i = 0; i < s1size; i++)
 ptr[i] = s1[i];
