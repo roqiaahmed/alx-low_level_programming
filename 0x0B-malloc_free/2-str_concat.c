@@ -24,18 +24,16 @@ char *str_concat(char *s1, char *s2)
 {
 int i;
 char *ptr;
-  int s1size = _size(s1);
-int s2size = _size(s2);
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-ptr = malloc(sizeof(char) * (s1size + s2size + 1));
+ptr = malloc(sizeof(char) * (_size(s1) + _size(s2) + 1));
 if (ptr == NULL)
 return (NULL);
-for (i = 0; i < s1size; i++)
+for (i = 0; i < _size(s1); i++)
 ptr[i] = s1[i];
-for (i = 0; i < s2size; i++)
-ptr[s1size + i] = s2[i];
+for (i = 0; i < _size(s2); i++)
+ptr[_size(s1) + i] = s2[i];
 return (ptr);
 }
