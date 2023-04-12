@@ -25,7 +25,7 @@ char *ptr;
 int i;
 if (str == NULL)
 return (NULL);
-ptr = malloc(sizeof(char) * (_size(str)));
+ptr = malloc(sizeof(char) * (_size(str) + 1));
 if (ptr == NULL)
 return (NULL);
 for (i = 0; i < _size(str); i++)
