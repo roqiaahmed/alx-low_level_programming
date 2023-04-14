@@ -14,10 +14,10 @@ int *ptr;
 int i;
 if (max < min)
 return (NULL);
-ptr = malloc(sizeof(int) * (max - min) + 1);
-if (ptr == 0)
+ptr = malloc(sizeof(int) * (max - min + 1));
+if (ptr == NULL)
 return (NULL);
-for (i = 0; i <= max; i++)
-ptr[i] = min + i;
+for (i = 0; min <= max; i++)
+ptr[i] = min++;
 return (ptr);
 }
