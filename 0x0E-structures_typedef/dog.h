@@ -5,7 +5,7 @@
  *@name: the name
  *@age: the age
  *@owner: the owner
- * 
+ *
  *Description: info of the dog
  */
 struct dog
