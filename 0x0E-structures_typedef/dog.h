@@ -1,6 +1,10 @@
 #ifndef dog_h
 #define dog_h
-
+/**
+ * struct dog - check the code
+ *
+ * Return: info of dog
+ */
 struct dog
 {
 char *name;
