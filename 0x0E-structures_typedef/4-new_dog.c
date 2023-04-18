@@ -20,7 +20,7 @@ return (n);
  *@src: the string
  * Return: copy string
  */
-char *_strcpy( char *dest, const char *src )
+char *_strcpy(char *dest, const char *src)
 {
 int i;
 for (i = 0; i < num(src); i++)
