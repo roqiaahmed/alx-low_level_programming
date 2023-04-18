@@ -8,7 +8,10 @@
  */
 void free_dog(dog_t *d)
 {
-d->name = "";
-d->age = 0;
-d->owner = NULL;
+if (d)
+{
+free(d->name);
+free(d->owner);
+free(d);
+}
 }
