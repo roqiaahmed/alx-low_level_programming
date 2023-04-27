@@ -15,7 +15,7 @@ unsigned int i = 0;
 list_t *new_node = malloc(sizeof(list_t));
 if (!new_node)
 return (NULL);
-while (strdup(str))
+while (str[i])
 i++;
 new_node->str = strdup(str);
 new_node->len = i;
