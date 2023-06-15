@@ -4,7 +4,7 @@
  * sum_dlistint - returns the sum of all the data
  * @head: head of the list
  *
- * Return: the sum of all the data 
+ * Return: the sum of all the data
  */
 int sum_dlistint(dlistint_t *head)
 {
