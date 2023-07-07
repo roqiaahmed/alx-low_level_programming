@@ -11,24 +11,21 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    unsigned long int index;
-    hash_node_t *currnet_node;
-
-    if (ht == NULL || key == NULL || *key == '\0')
-        return (NULL);
-
-    index = key_index((const unsigned char *)key, ht->size);
-    if (index >= ht->size)
-        return (NULL);
-
-    currnet_node = ht->array[index];
-    if (currnet_node)
-    {
-        while (strcmp(currnet_node->key, key) != 0)
-        {
-            currnet_node = currnet_node->next;
-        }
-        return (currnet_node->value);
-    }
-    return (NULL);
+unsigned long int index;
+hash_node_t *currnet_node;
+if (ht == NULL || key == NULL || *key == '\0')
+return (NULL);
+index = key_index((const unsigned char *)key, ht->size);
+if (index >= ht->size)
+return (NULL);
+currnet_node = ht->array[index];
+if (currnet_node)
+{
+while (strcmp(currnet_node->key, key) != 0)
+{
+currnet_node = currnet_node->next;
+}
+return (currnet_node->value);
+}
+return (NULL);
 }
