@@ -1,15 +1,9 @@
 #!/usr/bin/python3
+"""5-island_perimeter module"""
+
 
 def island_perimeter(grid):
-    """
-    Calculates the perimeter of the island described in the grid.
-    
-    Args:
-        grid (List[List[int]]): The grid representing the island.
-    
-    Returns:
-        int: The perimeter of the island.
-    """
+    """Returns the perimeter of the island described in grid"""
     rows = len(grid)
     cols = len(grid[0])
     perimeter = 0
