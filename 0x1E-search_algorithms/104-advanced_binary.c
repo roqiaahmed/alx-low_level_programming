@@ -1,13 +1,13 @@
 #include "search_algos.h"
 #include <stdio.h>
 
-/**
- * list_arr - print the array
- *
- * @array:pointer to the first element
- * @left:start of the  array
- * @right:end of the  array
- */
+// /**
+//  * list_arr - print the array
+//  *
+//  * @array:pointer to the first element
+//  * @left:start of the  array
+//  * @right:end of the  array
+//  */
 // void list_arr(int *array, int left, int right)
 // {
 //     int i;
