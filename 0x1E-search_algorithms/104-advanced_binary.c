@@ -34,7 +34,6 @@ int advanced_binary(int *array, size_t size, int value)
 {
     int left = 0;
     int right = size - 1;
-    int i;
     if (array == NULL)
         return -1;
 
