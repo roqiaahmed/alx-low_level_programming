@@ -1,26 +1,6 @@
 #include "search_algos.h"
 #include <stdio.h>
 
-// /**
-//  * list_arr - print the array
-//  *
-//  * @array:pointer to the first element
-//  * @left:start of the  array
-//  * @right:end of the  array
-//  */
-// void list_arr(int *array, int left, int right)
-// {
-//     int i;
-
-//     printf("Searching in array: ");
-//     for (i = left; i <= right; i++)
-//     {
-//         printf("%d", array[i]);
-//         if (i != right)
-//             printf(", ");
-//     }
-//     printf("\n");
-// }
 /**
  * advanced_binary - searches for a value in an array
  *
